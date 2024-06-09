@@ -1,0 +1,31 @@
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    margin: 4vh 3vw;
+    font-size: larger;
+    margin-bottom: 8vh;
+}
+
+.title-header {
+    width: 30%;
+    /* background-color: red; */
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.header-route {
+    padding: 0 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: green; */
+}
+.header-route a, .title-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-route a:hover{
+    cursor: pointer;
+    font-weight: bold;
+}

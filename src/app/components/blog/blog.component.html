@@ -1,0 +1,16 @@
+
+<div  class="container-blog">
+    <h1>Blog:</h1>
+  <div class="blog-template" *ngFor="let a of blog">
+    <div class="blog-date">{{ a.date }}</div>
+    <div class="blog-mission">
+        <ul *ngFor="let mission of a.mission">
+            <li> {{mission}}</li>
+        </ul>
+    </div>
+
+    <div class="blog-description">
+      {{ a.description }}
+    </div>
+  </div>
+</div>
