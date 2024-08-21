@@ -22,3 +22,10 @@
     font-weight: 800;
 
 }
+
+.blog-writter{
+    padding: 1em 1em;
+    border-radius: 25px;
+    border: solid 1px black;
+    width: 25%;
+}
