@@ -7,10 +7,10 @@
 .blog-template {
     /* background-color: red; */
     margin: 2vh 0;
-    width: 30%;
     padding: 1em 1em;
     border-radius: 25px;
     border: solid 1px black;
+    overflow: hidden;
 }
 
 .blog-date {
@@ -23,9 +23,17 @@
 
 }
 
-.blog-writter{
-    padding: 1em 1em;
-    border-radius: 25px;
-    border: solid 1px black;
-    width: 25%;
+.blog-template img {
+    max-width: 100px;
+    width: 100px;
+}
+
+.blog-description img {
+    max-width: 100px;
+    width: 100px;
+}
+
+.blog-description {
+    display: flex;
+    flex-direction: column;
 }

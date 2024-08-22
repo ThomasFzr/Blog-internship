@@ -1,24 +1,22 @@
 <div class="container-blog">
   <h1>Blog:</h1>
+  <br />
 
-  <div class="blog-template" *ngFor="let a of blog">
-    <div class="blog-date">{{ a.date }}</div>
-    <div class="blog-mission">
-      <ul *ngFor="let mission of a.mission">
-        <li>{{ mission }}</li>
-      </ul>
-    </div>
-    <div class="blog-description">
-      {{ a.description }}
-    </div>
+  <!-- Dropdown pour trier les articles du blog -->
+  <div class="sort-dropdown">
+    <label for="sort-options">Trier par date:</label>
+    <select id="sort-options" (change)="onSortChange($event)">
+      <option *ngFor="let option of sortOptions" [value]="option.value">{{ option.label }}</option>
+    </select>
   </div>
 
-  <div class="blog-writter">
-    <form (ngSubmit)="onSubmit()">
-      Date: <input type="date" [(ngModel)]="newBlog.date" name="date" required /><br />
-      Mission(s): <input type="text" [(ngModel)]="newBlog.missions" name="missions" required /><br />
-      Description: <textarea [(ngModel)]="newBlog.description" name="description" required></textarea><br />
-      <button type="submit">SEND</button>
-    </form>
+  <!-- Affichage des articles triés -->
+  <div class="blog-template" *ngFor="let a of sortedBlog">
+    <div class="blog-date">{{ a.date | date: 'dd MMMM yyyy' }}</div>
+    <div class="blog-mission">
+      <ul>
+      </ul>
+    </div>
+    <div class="blog-description" [innerHTML]="a.description"></div>
   </div>
 </div>
