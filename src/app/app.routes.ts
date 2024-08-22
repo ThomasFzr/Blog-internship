@@ -7,8 +7,8 @@ import { UserComponent } from './components/user/user.component';
 
 export const routes: Routes = [
   {
-    path: '',
-    title: 'Home Page',
+    path: 'entreprise',
+    title: 'Entreprise',
     component: HomeComponent,
   },
   {
@@ -17,18 +17,18 @@ export const routes: Routes = [
     component: UserComponent,
   },
   {
-    path: 'about',
-    title: 'About Page',
+    path: '',
+    title: 'About',
     component: AboutComponent,
   },
   {
     path: 'contact',
-    title: 'Contact Page',
+    title: 'Contact',
     component: ContactComponent,
   },
   {
     path: 'blog',
-    title: 'Blog Page',
+    title: 'Blog',
     component: BlogComponent,
   },
 ];

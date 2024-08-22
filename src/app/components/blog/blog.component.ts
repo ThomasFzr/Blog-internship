@@ -26,28 +26,28 @@ export class BlogComponent {
         date: new Date('2024-06-11'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          petit fix edit profil candidat, on ne pouvait pas edit si 3 profils
-          enregistrement en bdd marche pour tout lors de la creation d'un profil
-          mais lors de l'edit : ca mache pour "tout", "choisir ma mobi" mais qlq
-          bugs quand on edit en faisanttout -> mon departement ajout de doublon
+          Fix edit profil candidat, on ne pouvait pas edit si 3 profils<br>
+          Enregistrement en bdd marche pour tout lors de la creation d'un profil
+          mais lors de l'edit : ça marche pour "tout", "choisir ma mobilité" mais quelquels
+          bugs quand on edit en faisant tout -> mon departement ajout de doublon
         `),
       },
       {
         date: new Date('2024-06-12'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          dans http://localhost:50898/employment/resumesearch.aspx mettre en gras
-          les 3 grandes caté: électronique, génie électrique, automatisme c bon
+          Dans ~/employment/resumesearch.aspx mise en gras
+          des 3 grandes catégories: électronique, génie électrique, automatisme
         `),
       },
       {
         date: new Date('2024-06-13'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          J'ai travaillé sur: Lors de la création et la modification d'un profil
+          Lors de la création et la modification d'un profil
           candidat, ce dernier peut choisir sa mobilité (Toute la France, son
           département, ou choisir ses départements un à un) Dans la CVThèque j'ai
-          retirer code postal, la ville et le département et j'ai ajouté le front
+          retirer code postal, la ville et le département et j'ai ajouté le front-end
           du choix de la mobilité candidat
         `),
       },
@@ -55,7 +55,7 @@ export class BlogComponent {
         date: new Date('2024-06-14'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          J'ai travaillé sur: Fix de l'insertion de la mobilité en base de donnée,
+          Fix de l'insertion de la mobilité en base de donnée,
           il y avait un pb avec les départements de la Corse (2A,2B)) mais tout
           marche maintenant. Stored procedure search resume qui ne marche pas
           encore (Filtre sur la mobilité du candidat)
@@ -122,9 +122,9 @@ export class BlogComponent {
         date: new Date('2024-06-26'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          J'ai essayé de faire marche la licence key ca ne marche toujours pas.
-          L'inscription d'une formationn marche, ainsi que lajout dynamique de
-          formation Lors de la modif du profil formation les informations ne sont
+          J'ai essayé de faire marcher la licence key mais ça ne marche toujours pas.<br>
+          L'inscription d'une formation marche, ainsi que l'ajout dynamique de
+          formation <br> Lors de la modif du profil formation les informations ne sont
           pas encore toutes ramenées.
         `),
       },
@@ -141,7 +141,7 @@ export class BlogComponent {
         date: new Date('2024-06-28'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Header différent admin accès limité dans le backoffice Ajout des filtres
+          Header différent admin accès limité dans le backoffice <br> Ajout des filtres
           de formations, ils marchent presque tous Get all formations marche sur
           la page formation
         `),
@@ -161,66 +161,66 @@ export class BlogComponent {
         date: new Date('2024-07-02'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Création page détaillée d'une formation/école avec toutes les formations qu'elle propose
+          Création page détaillée d'une formation/école avec toutes les formations qu'elle propose<br>
 
-          Modification filtres Lieu et Niveau d'études
+          Modification filtres Lieu et Niveau d'études<br>
 
-          Fix des images de la partie Blog et des Offres d'emplois (205 images)
+          Fix des images de la partie Blog et des Offres d'emplois (205 images)<br>
 
-          Ajout du header "VOUS ÊTES ORGANISME
+          Ajout du header "VOUS ÊTES ORGANISME<br>
 
-          DE FORMATION ?" sur la page d'inscription formation
+          DE FORMATION ?" sur la page d'inscription formation<br>
         `),
       },
       {
         date: new Date('2024-07-03'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Ajout filtre télétravail
-          Modification inscription formation télétravail
-          Ajout filtre télétravail dans la stored procédure
-          Affichage télétravail sur formation, puis sur le détails formations
+          Ajout filtre télétravail<br>
+          Modification inscription formation télétravail<br>
+          Ajout filtre télétravail dans la stored procédure<br>
+          Affichage télétravail sur formation, puis sur le détails formations<br>
 
-          Début : Ajout balise alt image pour améliorer le SEO 
-          Optimisation inscription formation
+          Début : Ajout balise alt image pour améliorer le SEO <br>
+          Optimisation inscription formation<br>
         `),
       },
       {
         date: new Date('2024-07-04'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Optimisation inscription/modification/suppression fomation
-          Début:
-          Backoffice validation formation
+          Optimisation inscription/modification/suppression fomation<br>
+          Début:<br>
+          Backoffice validation formation<br>
 
-          Fix de certains CVs non dispo. dans le back office 
+          Fix de certains CVs non dispo. dans le back office<br> 
         `),
       },
       {
         date: new Date('2024-07-05'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Back office affichage de toutes les formations non validées
+          Back office affichage de toutes les formations non validées<br>
 
-          Back office possibilité de valider/supprimer des formations
-          Centre de formation affichage de max. 5 villes + autres
+          Back office possibilité de valider/supprimer des formations<br>
+          Centre de formation affichage de max. 5 villes + autres<br>
 
-          Fix problème niveau étude profil  candidat
+          Fix problème niveau étude profil  candidat<br>
         `),
       },
       {
         date: new Date('2024-07-08'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Parcourir les formations approuvées + pouvoir les supprimer/désapprouver
+          Parcourir les formations approuvées + pouvoir les supprimer/désapprouver<br>
 
-          Ajout filtre date/alphabétique sur Approuver les formations et Parcourir les formations
+          Ajout filtre date/alphabétique sur Approuver les formations et Parcourir les formations<br>
           
-          Problèmes résolus:
+          Problèmes résolus:<br>
           
-          Ajout cvthèque recruteur qui ne marchait plus
+          Ajout cvthèque recruteur qui ne marchait plus<br>
           
-          Reset password pb modèle email backoffice
+          Reset password pb modèle email backoffice<br>
         `),
       },
       {
@@ -234,58 +234,58 @@ export class BlogComponent {
         date: new Date('2024-07-10'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Correction de plusieurs bugs sur le front (Blog et CVthèque)
-          Ajout de sections de filtre et détails des formations
-          Réglage du CSS pour la partie blog
+          Correction de plusieurs bugs sur le front (Blog et CVthèque)<br>
+          Ajout de sections de filtre et détails des formations<br>
+          Réglage du CSS pour la partie blog<br>
         `),
       },
       {
         date: new Date('2024-07-11'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Correction d'erreurs sur les détails de formation et ajout d'images sur le blog
+          Correction d'erreurs sur les détails de formation et ajout d'images sur le blog<br>
 
-          Mise à jour des liens d'image dans le blog pour correspondre au nouveau format
+          Mise à jour des liens d'image dans le blog pour correspondre au nouveau format<br>
         `),
       },
       {
         date: new Date('2024-07-12'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Nettoyage du code pour améliorer la lisibilité
-          Mise en place de tests pour vérifier les fonctionnalités du blog
+          Nettoyage du code pour améliorer la lisibilité<br>
+          Mise en place de tests pour vérifier les fonctionnalités du blog<br>
         `),
       },
       {
         date: new Date('2024-07-13'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Déploiement de nouvelles fonctionnalités sur la gestion des formations
-          Amélioration de l'interface utilisateur pour le blog
+          Déploiement de nouvelles fonctionnalités sur la gestion des formations<br>
+          Amélioration de l'interface utilisateur pour le blog<br>
         `),
       },
       {
         date: new Date('2024-07-14'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Ajout de nouvelles options de filtre dans la CVThèque
-          Amélioration des performances de la recherche de CV
+          Ajout de nouvelles options de filtre dans la CVThèque<br>
+          Amélioration des performances de la recherche de CV<br>
         `),
       },
       {
         date: new Date('2024-07-15'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Ajout d'un tableau récapitulatif des formations sur la page d'accueil
-          Correction de bugs mineurs dans le back office
+          Ajout d'un tableau récapitulatif des formations sur la page d'accueil<br>
+          Correction de bugs mineurs dans le back office<br>
         `),
       },
       {
         date: new Date('2024-07-16'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-          Amélioration de la gestion des images dans le blog
-          Mise à jour de la documentation interne
+          Amélioration de la gestion des images dans le blog<br>
+          Mise à jour de la documentation interne<br>
         `),
       },
       {
@@ -318,11 +318,11 @@ export class BlogComponent {
 J'ai également changer des traductions.
 <br/><br/>
 Avant: <br/>
-          <img src="images/menuBOunsorted.png" alt="Image de description 3">
+          <img src="images/menuBOunsorted.png" alt="Image de description 3" style="max-width:300px;">
 <br/><br/>
 Après: <br/>
 
-          <img src="images/menuBOsorted.png" alt="Image de description 3">
+          <img src="images/menuBOsorted.png" alt="Image de description 3" style="max-width:300px;">
         `),
       },
 
@@ -338,13 +338,13 @@ Après: <br/>
         date: new Date('2024-07-25'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-Ajout email et téléphone admiission pour les formations 
+Ajout email et téléphone admiission pour les formations <br>
 Lors de l'inscription:       
-          <img src="images/image (26).png" alt="Image de description 3"  >
-          <img src="images/image (27).png" alt="Image de description 3"  >
+          <img src="images/image (26).png" alt="Image de description 3"  style="max-width:600px;">
+          <img src="images/image (27).png" alt="Image de description 3"  style="max-width:600px;">
 
           Sur une formation:
-          <img src="images/image (28).png" alt="Image de description 3"  >
+          <img src="images/image (28).png" alt="Image de description 3"  style="max-width:600px;">
 
 
 `),
@@ -361,9 +361,9 @@ Ajout version mobile sur les pages formations, détails formation, entreprise`),
         date: new Date('2024-07-30'),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
-Ajout page groupement professionnel
-inscription
-modification profil
+Ajout page groupement professionnel:<br>
+inscription<br>
+modification profil<br>
 détails`),
       },
 
@@ -372,10 +372,10 @@ détails`),
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
 Balise H1 dynamique sur la page offre d'emploi pour améliorer la SEO
-          <img src="images/seo1.png" alt="Image de description 3"  >
-          <img src="images/seo2.png" alt="Image de description 3"  >
-          <img src="images/seo3.png" alt="Image de description 3"  >
-          <img src="images/seo4.png" alt="Image de description 3"  >
+          <img src="images/seo1.png" alt="Image de description 3"  style="max-width:600px;">
+          <img src="images/seo2.png" alt="Image de description 3"  style="max-width:600px;">
+          <img src="images/seo3.png" alt="Image de description 3"  style="max-width:600px;">
+          <img src="images/seo4.png" alt="Image de description 3"  style="max-width:600px;">
 
 `),
       },
@@ -385,7 +385,7 @@ Balise H1 dynamique sur la page offre d'emploi pour améliorer la SEO
         mission: ['Première mission'],
         description: this.sanitizer.bypassSecurityTrustHtml(`
 Ajout filtre/légende des 3 grandes catégories sur la page entreprise
-          <img src="images/image12.png" alt="Image de description 3"  >
+          <img src="images/image12.png" alt="Image de description 3" style="max-width:600px;"  >
 
 `),
       },
@@ -396,40 +396,17 @@ Ajout filtre/légende des 3 grandes catégories sur la page entreprise
         description: this.sanitizer.bypassSecurityTrustHtml(`
 Ajout lien cliquable sur cdi&cdd freelance etc
 
-          <img src="images/image13.png" alt="Image de description 3"  >
+          <img src="images/image13.png" alt="Image de description 3"  style="max-width:600px;">
           <br/>
 Changement couleur bouton et actégorie:
 
 
-            <img src="images/image14.png" alt="Image de description 3"  >
+            <img src="images/image14.png" alt="Image de description 3"  style="max-width:600px;">
 
 `),
       },
 
-      {
-        date: new Date('2024-08-9'),
-        mission: ['Première mission'],
-        description: this.sanitizer.bypassSecurityTrustHtml(`
-
-Au cours de ce stage, j'ai acquis une compréhension approfondie et diversifiée des processus de développement web, de la gestion des fonctionnalités et de la résolution de problèmes techniques. <br/>
-
-1. Compétences Techniques Développées
-Développement Frontend : J'ai amélioré mes compétences en développement frontend en travaillant sur la mise en forme du blog, l'optimisation des images et la gestion du CSS pour améliorer l'apparence et la performance des pages. J'ai également appris à utiliser des balises HTML de manière efficace et à intégrer des images de différents formats pour optimiser le SEO.
-Gestion des Images : La conversion des images en format WebP pour améliorer les performances et la résolution des problèmes liés aux images ont été des tâches clés, me permettant de mieux comprendre l'importance de l'optimisation des médias.
-Tri et Filtrage des Données : La mise en place d'options de tri et de filtrage dans les listes de données a renforcé ma compréhension des algorithmes de tri et de la gestion dynamique des données dans une application.
-2. Compétences en Gestion de Projet
-Documentation : La rédaction de documentation technique m'a permis de perfectionner mes compétences en communication écrite, essentielle pour assurer la clarté des processus et des fonctionnalités développées.
-Gestion des Backoffices : J'ai acquis une expérience significative dans la gestion des interfaces administratives, en mettant en place des fonctionnalités telles que la validation et la suppression des données, et en améliorant l'expérience utilisateur dans les sections administratives du site.
-3. Amélioration de l'Interface Utilisateur (UI)
-Design et UX : J'ai travaillé sur l'amélioration de l'interface utilisateur en modifiant l'affichage des formations, en ajoutant des options de filtrage, et en mettant à jour le design pour une meilleure ergonomie et une expérience utilisateur optimisée.
-Accessibilité : L'ajout de balises alt aux images pour améliorer l'accessibilité et le SEO a renforcé ma compréhension de l'importance de rendre les sites web accessibles à tous les utilisateurs.
-4. Résolution de Problèmes Techniques
-Débogage : J'ai fait face à divers problèmes techniques, tels que des bugs sur le front-end, des problèmes liés à l'intégration d'images, et des erreurs de fonctionnalité, ce qui m'a permis de développer des compétences solides en débogage et en résolution de problèmes.
-5. Expérience Pratique
-Intégration de Nouvelles Fonctionnalités : L'intégration de nouvelles fonctionnalités comme la gestion des formations et des filtres, ainsi que l'amélioration des performances de recherche, a enrichi mon expérience pratique dans le développement de fonctionnalités complexes.
-Interaction avec les Utilisateurs : La création de filtres et de fonctionnalités pour améliorer l'expérience utilisateur m'a permis de mieux comprendre les besoins des utilisateurs et comment y répondre efficacement.
-En conclusion, ce stage m'a offert une opportunité précieuse pour développer des compétences pratiques et théoriques dans le développement web, la gestion de projet, et l'amélioration de l'expérience utilisateur. Les défis rencontrés et les solutions mises en œuvre ont contribué à mon développement professionnel et à ma compréhension globale des pratiques de développement web modernes.`),
-      },
+      
     ];
     this.sortedBlog = [...this.blog]; // Initialise avec les données non triées
     this.sortBlog(); // Tri initial par défaut
